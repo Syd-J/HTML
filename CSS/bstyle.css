@@ -1,0 +1,120 @@
+#nav-bar {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+}
+
+li.links {
+	float: left;
+}
+
+li.links a {
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+body {
+	background-image: url("../light_abstract.jpeg");
+	font-family: serif;
+	font-style: italic;
+}
+
+img {
+	margin: 10px;
+	float: left;
+	width:100px;
+	height:50px;
+	position: absolute;
+	z-index: -1;
+}
+
+h2 {
+	padding: 10px;
+}
+
+#title {
+	display: block;
+	color: orange;
+	font-size: 25px;
+}
+
+ol {
+	background: #ff9999;
+	padding: 20px;
+}
+
+ul {
+	background: #ff9999;
+	padding: 20px;
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+ol li {
+	background: #ffe5e5;
+	padding: 5px;
+	margin: 5px;
+}
+
+ul li {
+	background: #ffe5e5;
+	padding: 5px;
+	margin: 5px;
+}
+
+a:link, a:visited {
+	background-color: green;
+	color: black;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: red;
+}
+
+table {
+	outline: #4CAF50 solid 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+	background-color: #c9c9c9;
+}
+
+#course {
+	text-align: left;
+	color: red;
+}
+
+#score {
+	text-align: right;
+	color: red;
+}
+
+.courses {
+	text-align: left;
+	color: green;
+}
+
+.scores {
+	text-align: right;
+	color: green;
+}
+
+caption {
+	display: none;
+}
