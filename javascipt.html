@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h2>JavaScript</h2>
+	<p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project), the Mozilla Foundation, and the Mozilla Corporation.
+
+JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+
+JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort.</p>
+	<table>
+		<tr>
+        	<th>Subject</th>
+			<th>Marks Obtained</th>
+    	</tr>
+    	<tr>
+			<td>Computer Architecture</td>
+			<td>76</td>
+    	</tr>
+    	<tr>
+			<td>Concurrent and Parallel Programming</td>
+			<td>78</td>
+    	</tr>
+    	<tr>
+			<td>DBMS</td>
+			<td>83</td>
+    	</tr>
+    	<tr>
+    		<td id="total" colspan="2"></td>
+    	</tr>
+    	<tr>	
+    		<td id="average" colspan="2"></td>
+    	</tr>	
+	</table><br>
+	<form name="frm">
+    	<label for="name">Name:</label><br>
+    	<input type="text" id="name" name="name" required><br>
+    	<label for="phone">Phone number:</label><br>
+    	<input type="number" id="phone" name="phone" required><br>
+    <p>Choice of Course:</p>
+    	<input type="radio" id="bachelors" name="course" required>
+    	<label for="bachelors">Bachelors</label><br>
+    	<input type="radio" id="masters" name="course" required>
+    	<label for="masters">Masters</label>
+    <p>Description:</p>
+    	<textarea id="description" required name="description" style="width:200px;height:100px;">Description</textarea><br>
+    <p>Subject interests:</p>
+    	<input type="checkbox" id="subject1" name="subject1">
+    	<label for="subject1">Data Structures and Algorithms</label><br>
+    	<input type="checkbox" id="subject2" name="subject2">
+    	<label for="subject2">DBMS</label><br>
+    	<input type="checkbox" id="subject3" name="subject3">
+    	<label for="subject3">Operating Systems</label><br><br>
+    	<input type="submit" value="Submit" onclick="return Validate()">    
+	</form>
+	<p id="math"></p>
+	<p id="outputDetails"></p>
+	<p id="outputCourse"></p>
+	<p id="outputDescription"></p>
+	<p id="outputChoices"></p>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
