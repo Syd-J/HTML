@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		span {
+			background: #def3ca;
+			padding: 3px;
+			float: left;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+	<div class="container">	
+		<h1>Bootstrap 4</h1>
+		<p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications.</p>
+	</div>
+	<button id="hider">Hide</button>
+	<button id="shower">Show</button>
+	<div>
+		<span>Some</span> <span>very</span> <span>interesting</span> <span>text</span>
+		<span>you</span> <span>should</span> <span>definitely</span> <span>read.</span>
+	</div>
+	<script>
+	$( "#hider" ).click(function() {
+  		$( "span:last-child" ).hide( "slow", function() {
+    		$( this ).prev().hide( "slow", arguments.callee );
+  		});
+	});
+	$( "#shower" ).click(function() {
+  		$( "span" ).show( 2000 );
+	});
+	</script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
