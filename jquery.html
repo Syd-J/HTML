@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<style>
+		.class1 {
+			border: 5px solid blue;
+		}
+		.class2 {
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<p>Double click image to change it's properties</p>
+	<div>
+		<img src="black_hole.jpeg" class="class1" id="toggle">
+	</div><hr>
+	<button id="fadeout">Fade Out</button>
+	<button id="fadein">Fade In</button><br><br>
+	<img src="black_hole.jpeg" id="fade"><hr>
+	<button id="get">Get</button>
+	<button id="post">Post</button>
+	<script>
+		$(document).ready(function(){
+			$("#toggle").dblclick(function(){
+				$(this).toggleClass("class2");
+			});
+			$("#fadeout").click(function(){
+				$("#fade").fadeOut("slow");
+			});
+			$("#fadein").click(function(){
+				$("#fade").fadeIn("slow");
+			});
+			$("#get").click(function(){
+				$.get("demo_test.txt", function(data, status){
+					alert("Data: "+data+"\nStatus: "+status);				
+				});
+			});
+			$("#post").click(function(){
+				$.post("demo_test.txt", function(data, status){
+					alert("Data: "+data+"\nStatus: "+status);
+				});
+			});
+		});
+	</script>
+</body>
+</html>
